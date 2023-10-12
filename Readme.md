@@ -3,14 +3,14 @@
 [![Dependency Status][deps-image]][deps-url]
 [![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
-# sax-stream
+# sax-stream-parser
 
 [Transform stream][transform-stream] for parsing large XML files. It is using SAX module internally. Emits objects:
 one object per each selected node.
 
 ## Installation
 
-	  $ npm install sax-stream
+	  $ npm install sax-stream-parser
 
 
 ## Usage
@@ -19,7 +19,7 @@ Use as any transform stream: pipe request or file stream to it, pipe it downstre
 transform/writeable stream or handle `data` event.
 
 ```javascript
-var saxStream = require('sax-stream');
+var saxStream = require('sax-stream-parser');
 
 
 request('http://blog.npmjs.org/rss')
